@@ -1,24 +1,36 @@
-<html>
-<body>
 <head>
-<title> Personal portfolio - msa </title>
-</head>
-<h1>Hey, this is msa.
-Welcome to my abode. </h1>
-  <h3> NOTE: This site is still a stub. I apologize for the lack of functionality, it shall be updated very soon. :) </h3>
-  <p>
-    I'm a current Computer Science (Behaivor Science) graduate at Republic University. 
-    I'm an accomplished software and full-stack developer.
-    I'm pursuing my research/thesis work under that site.
-    <br>
-    
-    You can find me on : 
-    <ul>
-      <li><a href="https://github.com/msaistaken"> GitHub </a></li>
-      <li><a href="https://www.linkedin.com/in/msaistaken/"> LinkedIn </a> </li>
-      <li><a href="https://www.hackerrank.com/msaistaken"> Hackerrank </a></li>
-  </ul>
+    <link rel="stylesheet/less" type="text/css" href="styles/main.less" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/1.4.3/js/jquery.terminal.js"></script>
+    <script type="text/javascript" src="src/shell.js"></script>
+    <script type="text/javascript" src="src/cli.js"></script>
+  </head>
   
-  <footer> (C) msa, 2020. All rights reserved. </footer>  
-</body>
-</html>
+  <body>
+  
+  <div class="terminal-window">
+    <header>
+      <div class="button red"></div>
+      <div class="button yellow"></div>
+      <div class="button green"></div>
+    </header>
+    <div id="terminal">
+      <p><span class="green">\[._.]/</span> - you're in msa's cli! type `help` to get started.</p>
+        <p class="hidden">
+          <span class="prompt">
+            <span class="root">root</span>
+            <span class="tick">❯</span>
+          </span>
+          <span contenteditable="true" class="input"></span>
+        </p>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <p>© msa 2020</p>
+    <p> Made with ❤ and coffee</p>
+    <p>Site code can be found <a class="site-code" target="_blank" href="https://github.com/msaistaken/msaistaken.github.io">here</a></p>
+  </div>
+  
+  </body>
